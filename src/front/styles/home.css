@@ -4,4 +4,30 @@
     All pages share the styles on index.css but you should create 
     one more css for each page that will contain the selected used 
     on that page only (the ones not reused in other pages).
+
+    
 */
+
+#gato {
+  height: 290px;
+  width: 500px;
+  margin-left: 800px;
+  border-radius: 50%;
+}
+
+
+h1 {
+  
+  margin-top: 200px;
+
+  font-size: 50px;
+  text-align: center;
+  color: rgb(53, 155, 238);
+  text-shadow: rgb(8, 73, 97) 4px 4px 6px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#buttonNavbar{
+  margin-left: 20px;
+}
