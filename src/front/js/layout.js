@@ -12,7 +12,6 @@ import { Footer } from "./component/footer";
 import Login from "./component/login.jsx";
 import Private from "./component/private.jsx";
 import { Registro } from "./component/registro.jsx";
-import { MenuPrincipal } from "./component/MenuPrincipal.jsx";
 
 //create your first component
 const Layout = () => {
@@ -31,7 +30,6 @@ const Layout = () => {
             <Route element={<Registro />} path="/registro"></Route>
             <Route element={<Private />} path="/private"></Route>
             <Route element={<Home />} path="/home"></Route>
-            <Route element={<MenuPrincipal />} path="/menuprincipal"></Route>
             <Route element={<Single />} path="/single/:theid"></Route>
             <Route element={<h1>Not found!</h1>} />
           </Routes>

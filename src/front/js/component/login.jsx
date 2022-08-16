@@ -59,9 +59,9 @@ export const Login = () => {
             ></input>
           </div>
           <div className="col-auto">
-            <Link to="/menuprincipal">
+            <Link to="/private">
               <button
-                onClick={onSave}
+                onClick={ onSave }
                 type="submit"
                 className="btn btn-primary mb-3"
               >

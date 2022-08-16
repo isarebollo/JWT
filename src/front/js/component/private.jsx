@@ -1,16 +1,24 @@
 import React, { useState, useEffect } from "react";
 import "../../styles/private.css";
-import { Redirect } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 const Private = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!localStorage.getItem("token")) {
+      alert("inicia sesión para entrar")
+      navigate("/login ");
+    } else {
+      navigate("/private");
+    }
+  }, []);
+
   return (
     <>
-      <div className="container col-8  d-flex justify-content-center mt-3 mb-3">
-        <img
-          src="https://sites.google.com/site/cpimatematicas2bacb/_/rsrc/1511371228206/zona-alumnos/zona-privada.png"
-          alt=""
-        />
+      <div className="container text-center">
+        <h1>ESTAS DENTRO DE UN MENU PRIVADO </h1>
       </div>
-      
     </>
   );
 };

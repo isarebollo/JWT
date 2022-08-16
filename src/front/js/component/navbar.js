@@ -14,16 +14,16 @@ export const Navbar = () => {
         </Link>
         <div className="ml-auto">
           <Link to="/login">
-            <button className="btn btn-primary">Login</button>
+            <button className="btn btn-primary">Iniciar Sesión</button>
           </Link>
           <Link to="/registro">
             <button id="buttonNavbar" className="btn btn-primary">
               Registro
             </button>
           </Link>
-          <Link to="/menuprincipal">
+          <Link to="/private">
             <button id="buttonNavbar" className="btn btn-primary">
-              Menu Principal
+              Privado
             </button>
           </Link>
         </div>
@@ -34,7 +34,7 @@ export const Navbar = () => {
             removeStorage()
           }}
         >
-          {" "}
+         
           Cerrar Sesión
         </button>
         </Link>
